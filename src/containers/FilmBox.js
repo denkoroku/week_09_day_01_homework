@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FilmList from "../components/FilmList";
+import LinkBox from "../containers/LinkBox";
 
 class FilmBox extends Component{
   constructor(props){
@@ -39,8 +40,11 @@ class FilmBox extends Component{
 render(){
   return(
     <div className="film-box">
-      <h2>Films</h2>
+      <h3>Upcoming Film Releases for the UK</h3>
+      <hr />
       <FilmList  films={ this.state.data } />
+      <hr />
+      <LinkBox />
     </div>
   )
 }
